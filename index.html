@@ -36,8 +36,10 @@
 
         div#form{background-color:rgb(67, 136, 164) ;margin: auto; width: 500px; padding: 30px; text-align: center; border-radius: 10px;}
         h1#form{color: white;font-size: 2em;}
-        input#name,#email{border-radius: 5px;text-align: center;width: 350px;}
-        input{border-radius: 5px;text-align: center;}
+
+    #name,#email,#telefone{border-radius: 5px;text-align: center;width: 320px;}
+    #telefone{border-radius: 5px;text-align: center;width: 305px;}
+        
         textarea{border-radius: 5px;text-align: center;align-items: center;}
 
         #contato{display: flex;justify-content: end;}
@@ -148,12 +150,13 @@ main{justify-content: center;}
 }
 @media(max-width:600px){
     #whatsapp{}
-    h1{font-size: larger;}
+    
     h2{font-size: small;}
     p{font-size: small;}
     div#form{background-color:rgb(67, 136, 164) ;margin: auto; width: 80vw; padding: none;text-align: center; border-radius: none;}
         h1#form{color: white;font-size: 2em;}
         input#name,#email{border-radius: 5px;text-align: center;width: 300px;}
+        #telefone{width: 285px;}
         input{border-radius: 5px;text-align: center;}
         textarea{border-radius: 5px;text-align: center;align-items: center;text-align: center;width: 70vw;}
         
@@ -167,13 +170,13 @@ main{justify-content: center;}
 <body>
     <header >
         
-            <a href=""><img id="logo"src="img/icons/demontie_logo_branco.png" alt=""></a>
+            <a href=""><img id="logo" src="img/icons/demontie prata.png" alt=""></a>
                           
 
 
             <div id="redes_sociais">
                 <a target="_blank" href="https://www.youtube.com/"><img src="img/icons/youtube (2).png" alt=""></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/demontiesolucoes/?igshid=YmMyMTA2M2Y"><img src="img/icons/instagram.png" alt=""></a>
                 <a target="_blank" href="https://wa.me/5511957809380"><img src="img/icons/whatsappl2.png" alt=""></a>
                 <a target="_blank" href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt=""></a>
                 <a target="_blank" id="ultimo" href="https://www.twitter.com/"><img src="img/icons/twitter.png" alt=""></a>
@@ -225,9 +228,11 @@ main{justify-content: center;}
 
 
 
+
+
         <div class="dois">
             <div class="dentro2">
-                <h1>Quem somos:</h1>
+                <h1>Sobre Nós:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident iure maxime aliquam voluptatibus eaque minima debitis quae magnam ex porro sint est, consequuntur, expedita distinctio modi accusamus harum officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut est dignissimos atque fuga inventore quam a? Molestiae, officiis cupiditate nihil laudantium dolores at aspernatur maxime aut, commodi ea voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque facere, esse, dignissimos delectus repellat deleniti sapiente minus, excepturi voluptatem culpa rem omnis. Dolores placeat, qui autem saepe reprehenderit assumenda rerum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi beatae necessitatibus debitis minus pariatur consequuntur reprehenderit mollitia. Consequatur quae similique soluta aspernatur odio exercitationem, temporibus officiis a dicta? Magni, dolorum?</p>
             </div>
             <div class="dentro2" id="img1"><img src="" alt=""></div>
@@ -238,11 +243,13 @@ main{justify-content: center;}
            
             <div class="dentro2" id="img2"><img src="" alt=""></div>
             <div class="dentro2">
-                <h1 class="white">Valores da Empresa:</h1>
+                <h1 class="white">Tranquilidade para você focar no que importa.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident iure maxime aliquam voluptatibus eaque minima debitis quae magnam ex porro sint est, consequuntur, expedita distinctio modi accusamus harum officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut est dignissimos atque fuga inventore quam a? Molestiae, officiis cupiditate nihil laudantium dolores at aspernatur maxime aut, commodi ea voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque facere, esse, dignissimos delectus repellat deleniti sapiente minus, excepturi voluptatem culpa rem omnis. Dolores placeat, qui autem saepe reprehenderit assumenda rerum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi beatae necessitatibus debitis minus pariatur consequuntur reprehenderit mollitia. Consequatur quae similique soluta aspernatur </p>
             </div>
            
         </div>
+
+        
     </main>
 
 
@@ -255,9 +262,13 @@ main{justify-content: center;}
                 <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome"><br>
 
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="tel" name="telefone" id="telefone"><br>
+
                 <label for="email"><strong>e-mail</strong></label>
-                <input type="email" name="email" id="email"> <br><br>
+                <input type="email" name="email" id="email"> <br>
                
+                
                 <h2>serviços</h2><br>
                 <label for="Bombeiro">Bombeiro</label>
                 <input type="checkbox" name="serviço:" id="Bombeiro" value="Bombeiro">
@@ -269,6 +280,7 @@ main{justify-content: center;}
                 <input type="checkbox" name="serviço:" id="Portaria" value="Portaria">
                 
                 <br><br>
+                
                 <textarea name="" id="text" cols="50" rows="10"></textarea>
                 <p></p>
                 <input type="submit" value="Enviar Formulário">
