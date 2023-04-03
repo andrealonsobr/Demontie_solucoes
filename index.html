@@ -7,9 +7,11 @@
     <title>Demontiê Soluções</title>
     <style>
         *{border: 0px;padding: 0px;margin: 0px;}
+
+
         body { overflow-x: hidden; }
         header{ background-color: rgb(24, 54, 66);height: 10vw;display: flex;justify-content: space-between;align-items: center;}
-        div#logo{background-color: rgb(36, 36, 48);width: 8vw ;height: 8vw;margin-left: 20px;}
+      
         div#contato{;width: 500px; height: 8vw;display: flex;justify-content: space-around; align-items: center;margin-right: 20px;flex-direction: column;}
 
         div.dois{height: 600px;background-color: white;display: flex;justify-content: center;align-items: center;}
@@ -22,6 +24,7 @@
         div.dentro2{width: 600px;height:500px ;background-color: none;margin: 2vw;display: flex;flex-direction: column;align-items: center;justify-content: space-around;padding: 30px;}
         div#img1{background-image: url(img/iStock-977073002-scaled.webp);background-size: contain;background-repeat: no-repeat;background-position: center;}
         div#img2{background-image: url(img/pexels-photo-3183150.jpeg);background-size: contain;background-repeat: no-repeat;background-position: center;}
+        
 
         nav{display: flex;justify-content: center;background-color: rgb(18, 40, 49)}
         nav>a{margin-left: 30px;padding: 5px;text-decoration: none;color: white;font-size: 1.1em;border-radius: 6px;}
@@ -122,12 +125,26 @@ main{justify-content: center;}
 #whatsapp:hover{background-image: url(img/icons/whatsapp_hover.png);transition: 1s;}
 
 #redes_sociais>a>img{height: 30px;margin-right: 10px;}
-#logo{height: 170px}
+#logo{height: 9vw ;width: ;}
 
 
 
 
+@media(max-width:900px){
 
+    div.dois{height: 800px;background-color: white;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+        div.dentro2{width: 600px;margin: 2vw;text-align: center;align-items: center;}
+        div#img1{background-image: url(img/iStock-977073002-scaled.webp);background-size: contain;background-repeat: no-repeat;background-position: center;}
+        div#img2{display: none;background-image: url(img/pexels-photo-3183150.jpeg);background-size: contain;background-repeat: no-repeat;background-position: center;}
+        
+
+
+        div.dois_cinza{height: 800px;background-color: gray;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+    
+        
+
+    
+}
     </style>
 
     <script>
@@ -209,6 +226,7 @@ main{justify-content: center;}
                 <h1 class="white">Valores da Empresa:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident iure maxime aliquam voluptatibus eaque minima debitis quae magnam ex porro sint est, consequuntur, expedita distinctio modi accusamus harum officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut est dignissimos atque fuga inventore quam a? Molestiae, officiis cupiditate nihil laudantium dolores at aspernatur maxime aut, commodi ea voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque facere, esse, dignissimos delectus repellat deleniti sapiente minus, excepturi voluptatem culpa rem omnis. Dolores placeat, qui autem saepe reprehenderit assumenda rerum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi beatae necessitatibus debitis minus pariatur consequuntur reprehenderit mollitia. Consequatur quae similique soluta aspernatur odio exercitationem, temporibus officiis a dicta? Magni, dolorum?</p>
             </div>
+           
         </div>
     </main>
 
