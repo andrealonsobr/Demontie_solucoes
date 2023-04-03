@@ -37,13 +37,15 @@
         input#name,#email{border-radius: 5px;text-align: center;width: 350px;}
         input{border-radius: 5px;text-align: center;}
         textarea{border-radius: 5px;text-align: center;align-items: center;}
+
+        #contato{display: flex;justify-content: end;}
         
 
         
 
 
         footer{
-            background-color:rgb(18, 40, 49) ; height: 60px;text-align: center;color: white;
+            background-color:rgb(18, 40, 49) ; height: 120px;text-align: center;color: white;display: flex;justify-content: center;align-items: center;flex-direction: column;
         }
 
         /* slider */
@@ -116,8 +118,9 @@
         #radio4:checked ~.navigation-auto .auto-btn4{background-color: white;}
 
 main{justify-content: center;}
-#whatsapp{ position: fixed;top: 85vh;left: 90vw;width: 100px;height: 100px;background-image: url(img/icons/whatsapp.png);background-size: contain;}
+#whatsapp{ position: fixed;top: 90vh;left: 92vw;width: 7vw;height: 7vh;background-image: url(img/icons/whatsapp.png);background-size: contain;background-repeat: no-repeat;}
 #whatsapp:hover{background-image: url(img/icons/whatsapp_hover.png);transition: 1s;}
+
 #redes_sociais>a>img{height: 30px;margin-left: 10px;}
 #logo{height: 170px}
 
@@ -131,13 +134,12 @@ main{justify-content: center;}
 
     </script>
 </head>
-<body>s
-    <header>
+<body>
+    <header >
         
             <a href=""><img id="logo"src="img/icons/demontie_logo_branco.png" alt=""></a>
             <div id="contato" >
-                <p>demontiesolucoesseg@gmail.com</p>
-                <p>(11) 95780-9380</p>
+                
 
 
             <div id="redes_sociais">
@@ -246,7 +248,13 @@ main{justify-content: center;}
 <a href="https://wa.me/5511957809380" id="whatsapp"></a>
 
     <footer>
-
+      <div id="redes_sociais">
+                <a href="https://www.youtube.com/"><img src="img/icons/youtube (2).png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt=""></a>
+                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsappl2.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt=""></a>
+                <a href="https://www.twitter.com/"><img src="img/icons/twitter.png" alt=""></a>
+            </div>
         <p>contato: (11) 95780-9830    /   e-mail:demontiesolucoesseg@gmail.com</p>
         <p id="preto">© Demontiê 2023 - Todos os direitos reservados. </p>
     </footer>
